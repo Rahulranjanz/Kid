@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Button Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #4caf50;
+            display: none; /* Hidden by default */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Next Button</h1>
+    <button id="nextButton">Next</button>
+    <div id="message" class="message">LOL BABYYYYY .....Why did you open this babe ????????????Do you want a Baby Huh???? Babe You already a baby hahahaha ...at least grow up first then think about baby okay?   Still if you want a baby then let's make it Hahahahah...</div>
+
+    <script>
+        const button = document.getElementById('nextButton');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', () => {
+            message.style.display = 'block'; // Show the message
+        });
+    </script>
+</body>
+</html>
